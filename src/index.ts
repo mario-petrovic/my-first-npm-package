@@ -1,1 +1,1 @@
-export const HelloMyFirstPackage = (name: string) => `Hello ${name}`;
+export * from 'utilities';
