@@ -1,20 +1,23 @@
 {
   "name": "my-first-npm-package",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Greet message",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.{ts,js}\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest --config jestconfig.json"
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
   },
   "repository": {
     "url": "https://github.com/mario-petrovic/my-first-npm-package.git",
     "type": "git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mario Petrovic",
   "files": [
     "lib/**/*"
   ],
