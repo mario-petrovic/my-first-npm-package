@@ -1,6 +1,6 @@
 {
-  "name": "my-first-npm-package",
-  "version": "1.0.0",
+  "name": "marios-first-npm-package",
+  "version": "1.0.1",
   "description": "Greet message",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
